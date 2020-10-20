@@ -1,10 +1,11 @@
 # Copyright (c) 3D geoinformation research group.
 # Distributed under the terms of the MIT License.
+
+FROM jupyter/datascience-notebook:latest
+
 LABEL maintainer.email="b.dukai@tudelft.nl" maintainer.name="Balázs Dukai"
 LABEL description="Image for Jupyter notebooks with spatial libraries"
 LABEL org.name="3D Geoinformation Research Group, Delft University of Technology, Netherlands" org.website="https://3d.bk.tudelft.nl/"
-
-FROM jupyter/datascience-notebook:latest
 
 USER root
 # Add the staff and student groups from Godzilla
