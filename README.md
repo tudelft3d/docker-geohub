@@ -1,5 +1,7 @@
 # Geohub docker image
 
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/tudelft3d/geohub)
+
 The docker image is meant for a Jupyter notebook-based workflows on spatial data. It is based on the `jupyter/datascience-notebook:latest` image, therefore includes libraries for data analysis from the Julia, Python, and R communities.
 
 It provides a computational environment for runniing parameterized analysis and reporting.
