@@ -56,8 +56,13 @@ RUN /opt/conda/bin/pip3 install --upgrade \
 RUN jupyter lab build
  
 # Install fonts of hrbrthemes
-RUN mkdir ~/.fonts \
- && cp -R /opt/conda/lib/R/library/hrbrthemes/fonts/*/* ~/.fonts/
+RUN mkdir ~/.local/share/fonts \
+ && cp -R /opt/conda/lib/R/library/hrbrthemes/fonts/* ~/.local/share/fonts \ 
+ && cd ~/.local/share/fonts \
+ && wget https://download.jetbrains.com/fonts/JetBrainsMono-2.001.zip \
+ && unzip JetBrainsMono-2.001.zip \
+ && rm JetBrainsMono-2.001.zip \
+ && fc-cache -f -v
 
 # Clean up
 RUN conda clean --all -y
