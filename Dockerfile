@@ -40,6 +40,8 @@ RUN conda install --quiet --yes \
     shapely \
     fiona \
     rasterio \
+    plotly \
+    geopandas \
     python-pdal \
     papermill \
     black \
