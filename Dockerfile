@@ -45,6 +45,7 @@ RUN conda install --quiet --yes \
     python-pdal \
     papermill \
     black \
+    tabulate \
  && conda clean --all -f -y \
  && fix-permissions "${CONDA_DIR}" \
  && fix-permissions "/home/${NB_USER}" 
