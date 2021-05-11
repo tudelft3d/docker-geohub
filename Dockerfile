@@ -42,6 +42,7 @@ RUN conda install --quiet --yes \
     rasterio \
     plotly \
     geopandas \
+    pyarrow \
     python-pdal \
     papermill \
     black \
